@@ -1,229 +1,257 @@
-@charset "UTF-8";
+<template>
+  <div id="app">
+    <CommonHeader></CommonHeader>
+    <main>
+    <div id="eyecatch">
+      <p>機械ではできない仕事を</p>
+    </div>
 
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+    <div class="news">
+      <div class="content">
+        <p>2019/01/01</p>
+        <div class="content3">
+        <p>ニュースタイトルがここには入ります。3月の決算報告書</p>
+      </div>
+      </div>
+      <div class="content2">news</div>
+    </div>
+
+    <div id="about" class="wrap">
+      <div class="flex around">
+        <div class="about-center">
+          <h1>お客様のために進化する成長企業であり続ける</h1>
+          <p>
+            顧客主導型サービスを提供する企業として、お客様の会社経営に必要なサービスと情報を提供し続ける企業支援会社を目指します。企業が現在直面している「勝ち残るため」の戦略を提供できる会社として、ホームページをはじめ、各種マーケティングをご提供いたします。
+          </p>
+          <a class="about-center-link"
+            href="飛ばしたいページ">ミッション詳細</a>
+        </div>
+        <div class="about-center2">
+          <img src="./assets/mission-img.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div id="business">
+      <h2 class="section-title">service</h2>
+      <div class="flex around business-wrap">
+       <div class="business-cat">
+          <h3>web制作事業</h3>
+          <p>コーチングのミッション</p>
+          <p>
+            ユーザーが求める物を分析し、ユーザビリティを備えた最適なサイトを提供。建設業から美容、ブライダル、飲食店まで多種多様な業種の制作実績があります
+          </p>
+          <a class="business-cat-link"
+            href="飛ばしたいページ">サービス詳細</a>
+        </div>
+        <div class="business-cat2">
+          <h3>web制作事業</h3>
+          <p>コーチングのミッション</p>
+          <p>
+            ユーザーが求める物を分析し、ユーザビリティを備えた最適なサイトを提供。建設業から美容、ブライダル、飲食店まで多種多様な業種の制作実績があります
+          </p>
+          <a class="business-cat2-link"
+            href="飛ばしたいページ">サービス詳細</a>
+        </div>
+        <div class="business-about">
+          <img src="./assets/service2.jpg" alt="red">
+        </div>
+        <div class="business-about2">
+          <img src="./assets/service1.jpg" alt="red">
+        </div>
+      </div>
+    </div>
+
+    <div class="parent">
+      <div class="child">
+        <h1>company</h1>
+        <p>会社概要</p>
+      </div>
+      <div class="child2">
+        <h1>recruit</h1>
+        <p>採用情報</p>
+      </div>
+    </div>
+
+    <div id="quesion">
+      <h1>FAQ</h1>
+      <p>良くある質問</p>
+    </div>
+
+    <div class="text-image">
+      <img src="./assets/contact-bg.jpg" alt="">
+      <h2>contact</h2>
+      <h3>お問い合わせ</h3>
+      <h1>お気軽にお問い合わせください。</h1>
+      <p>
+        資料請求・お問い合わせなどなんでも気軽にお問い合わせください。お仕事のご連絡もお問い合わせページに飛んでいただいて、入力フォームにご記入お願いいたします。
+      </p>
+      <a class="text-image-link"
+        href="#">お問い合わせへ</a>
+    </div>
+  </main>
+  <main id="main">
+    <div class="flex between">
+      <h1 class="main-logo">estra inc.</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="飛ばしたいページ">home</a></li>
+          <li><a href="飛ばしたいページ">about</a></li>
+          <li><a href="飛ばしたいページ">service</a></li>
+          <li><a href="飛ばしたいページ">works</a></li>
+          <li><a href="飛ばしたいページ">price</a></li>
+          <li><a href="飛ばしたいページ">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </main>
+    <CommonFooter></CommonFooter>
+  </div>
+</template>
+
+<script>
+import CommonHeader from "./components/CommonHeader";
+import CommonFooter from "./components/CommonFooter";
+export default{
+  components:{
+    CommonHeader,
+    CommonFooter
+  }
+};
+</script>
+
+
+<style>
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
 
 body {
-  line-height: 1;
+    line-height:1;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
 }
 
 nav ul {
-  list-style: none;
+    list-style:none;
 }
 
-blockquote,
-q {
-  quotes: none;
+blockquote, q {
+    quotes:none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
 }
 
 a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
 
 /* change colours to suit your needs */
 ins {
-  background-color: #ff9;
-  color: #000;
-  text-decoration: none;
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
 }
 
 /* change colours to suit your needs */
 mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
 }
 
 del {
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
 
-abbr[title],
-dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse:collapse;
+    border-spacing:0;
 }
 
 /* change border colour to suit your needs */
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-  margin: 1em 0;
-  padding: 0;
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
 }
 
-input,
-select {
-  vertical-align: middle;
+input, select {
+    vertical-align:middle;
 }
 
-.section-title {
+.section-title{
   font-size: 30px;
-  font-weight: bold;
-  margin: 30px 0;
-  text-align: center;
+  font-weight:bold;
+  margin:30px 0;
+  text-align:center;
 }
 
-img {
+img{
   display: block;
   width: 100%;
 }
 
-.wrap {
+.wrap{
   width: 80%;
-  margin: 0 auto 50px;
+  margin:0 auto 50px;
 }
 
-.flex {
+.flex{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.between {
+.between{
   justify-content: space-between;
 }
 
-.around {
+.around{
   justify-content: space-around;
-}
-
-header {
-  height: 70px;
-  background: black;
-}
-
-.header-logo {
-  font-size: 20px;
-  font-weight: bold;
-  margin-left: 35px;
-  color: #f2f2f2;
-  line-height: 70px;
-}
-
-.header-nav li {
-  display: inline-block;
-  margin-right: 35px;
-  font-size: 16px;
-}
-
-.header-nav a {
-  color: #f2f2f2;
 }
 
 #eyecatch {
   height: 800px;
   width: 100%;
-  background: url(../img/eyecatch.jpg) no-repeat;
+  background: url(./assets/eyecatch.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -311,13 +339,15 @@ header {
   font-size: 14px;
   position: relative;
   right: 4cm;
+  width: 500px;
 }
 
-.content p2 {
+.content3 p {
   color: black;
   font-size: 12px;
   position: relative;
   right: 3.7cm;
+  
 }
 
 .content2 {
@@ -459,7 +489,7 @@ body {
   height: 200px;
   padding: 10px;
   margin-top: 150px;
-  background: url(../img/company.jpeg);
+  background: url(./assets/company.jpeg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -488,7 +518,7 @@ body {
   height: 200px;
   padding: 10px;
   margin-top: 150px;
-  background: url(../img/recruit.jpg);
+  background: url(./assets/recruit.jpg);
   position: relative;
   background-size: cover;
   background-position: center;
@@ -605,58 +635,8 @@ body {
   color: #f2f2f2;
 }
 
-#footer {
-  width: 100%;
-  background: black;
-  color: white;
-  text-align: center;
-  height: 1cm;
-  position: absolute;
-}
-
 @media screen and (max-width: 768px) {
-#hamburger {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  cursor: pointer;
-  z-index: 100;
-  top: 15px;
-  right: 20px;
-  transition: 0.4s;
-}
-
-#hamburger span {
-  position: absolute;
-  left: 2px;
-  display: block;
-  width: 35px;
-  height: 2px;
-  background-color: #fff;
-  transition: 0.8s;
-}
-
-#hamburger span:nth-of-type(1) {
-  top: 10px;
-  /* ハンバーガーメニューの1本目の棒 */
-}
-
-#hamburger span:nth-of-type(2) {
-  top: 20px;
-  /* ハンバーガーメニューの2本目の棒 */
-}
-
-#hamburger span:nth-of-type(3) {
-  top: 30px;
-  /* ハンバーガーメニューの3本目の棒 */
-}
-
-.header-nav {
-  display: none;
-  /* デスクトップのナビを消す */
-}
-
-#eyecatch p{
+  #eyecatch p{
   width: 60%;
   top: 40%;
   margin-left: 25%;
@@ -684,13 +664,14 @@ body {
   margin-left: 10px;
 }
 
-.content p2{
+.content3 p{
   font-size: 15px;
   position: absolute;
   right: 10%;
   left: 5%;
   top: 40px;
   line-height: 25px;
+  width: 250px;
 }
 #about{
   height: 550px;
@@ -934,12 +915,5 @@ body {
   left: 100px;
   top: 5px;
 }
-
-#footer small{
-  position: relative;
-  top: 15px;
-  
 }
-
-
-}
+</style>
